@@ -16,5 +16,6 @@ sequenceDiagram
     Handler1->>HandlerN: RequestForHandlerN
     HandlerN->>Handler1: ReponseFromHandlerN (inherits from BaseResponse)
     Handler1->>Controller: ReponseFromHandler1 (inherits from BaseResponse)
+    Controller->>User: ReponseFromController
 ```
 
