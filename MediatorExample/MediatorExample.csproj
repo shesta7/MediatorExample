@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Handlers\WeatherForecastGetWeatherRequest\" />
+    <None Remove="Handlers\WeatherForecast\Requests\" />
+    <None Remove="Handlers\WeatherForecast\Responses\" />
+    <None Remove="Handlers\WeatherForecast\Handlers\" />
+    <None Remove="Application\" />
+    <None Remove="Services\" />
+    <None Remove="Application\WeatherForecast\Validators\" />
+    <None Remove="Application\WeatherForecast\Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RowebMediator\RowebMediator.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Services\" />
+    <Folder Include="Application\WeatherForecast\Validators\" />
+    <Folder Include="Application\WeatherForecast\Mappers\" />
+  </ItemGroup>
+</Project>

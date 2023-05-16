@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "Wq/P94NQHbYyKFKA0gpxTI7V25OkXt0EbM5sjKhfb2I=",
+  "Source": "MediatorExample",
+  "BasePath": "_content/MediatorExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/shestakov/Projects/MediatorExample/RowebMediator/RowebMediator.csproj",
+      "Version": 2,
+      "Source": "RowebMediator",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
