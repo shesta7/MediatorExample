@@ -34,3 +34,5 @@ sequenceDiagram
      - Validators [Валидаторы] [namespace appname.Validators]
         - ValidatorName (Название_запроса_Validator)
      - MediatorSender [partial class] методы Send запросов в handler'ы для медиатора
+2. Controllers (контроллеры - endpoints, задача методов контроллера сформировать запрос к медиатору и отдать ответ пользователю)
+3. Services (Сервисы - общие классы, в которых нет обработчиков, например CacheProvider)
